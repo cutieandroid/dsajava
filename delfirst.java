@@ -77,7 +77,7 @@ public class delfirst {
      
          ll.printlist();
          ll.deletefirst();
-         System.out.println("linked list after deleting the first node");
+         System.out.println("linked list after deleting the first node:");
          ll.printlist();
        
      
