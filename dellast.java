@@ -78,7 +78,7 @@ public class dellast {
          ll.printlist();
 
          ll.deletelast();
-         System.out.println("After deleting last node");
+         System.out.println("After deleting last node of the lsit");
          ll.printlist();
          
      
