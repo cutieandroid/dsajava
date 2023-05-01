@@ -37,7 +37,7 @@ public class delfirst {
      
         }
 
-        private void delfirst(){
+        private void deletefirst(){
             if(ghead==null)
             {
                 System.out.println("your linked list is already empty");
@@ -76,7 +76,7 @@ public class delfirst {
          //printting the linked list
      
          ll.printlist();
-         ll.delfirst();
+         ll.deletefirst();
          System.out.println("linked list after deleting the first node");
          ll.printlist();
        
