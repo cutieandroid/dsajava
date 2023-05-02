@@ -22,7 +22,7 @@ public class Lnkedlistsearch {
 
     }
 
-    private void printlist() { // function to print the linked list
+    private void printList() { // function to print the linked list
         listnode current = ghead;
 
         while (current != null) { // print the data of the linked list while we reach null. linked list's last
@@ -72,7 +72,7 @@ public class Lnkedlistsearch {
 
         // printting the linked list
 
-        ll.printlist();
+        ll.printList();
 
         ll.searchinLL(100);
 
