@@ -36,9 +36,9 @@ public class Linkedlistinsertbeg {
 
     private void insertbeg(int data){
     
-        listnode newnode= new listnode(0);
-        newnode.next= ghead;
-        ghead=newnode;
+        listnode newnode= new listnode(0); //create a node
+        newnode.next= ghead; // point the next of the node to the current head of the list
+        ghead=newnode; //make the new node as the head of the list
     }
     public static void main(String[] args) {
     
