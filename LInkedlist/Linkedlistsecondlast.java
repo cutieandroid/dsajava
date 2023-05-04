@@ -67,7 +67,7 @@ public class Linkedlistsecondlast {
 
         ll.printList();
 
-        System.out.println("second last node of the lu=ist is :" + ll.secondlast().data);
+        System.out.println("second last node of the linkedist is :" + ll.secondlast().data);
 
     }
 }
