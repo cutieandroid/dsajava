@@ -21,9 +21,8 @@ public class Linkedlistdelkey {
              this.data=data;
              this.next=next;
      
-     
          }
-    
+
         }
      
         private void printList(){ //function to print the linked list 
@@ -39,20 +38,25 @@ public class Linkedlistdelkey {
 
         private void del_key(int data){
             listnode current= ghead;
-            listnode temp = null;
+            listnode temp = null; //create the temp node to keep track of the recent visited node
+            //initiate while loop which checks if the node is null and the data is matched
             while(current!=null && current.data!=data){
                 temp=current;
                 current=current.next;
             }
 
-            if(temp==null){
+            //if temp node is null that means the data is less then the first node so first node gets deleted if the data matches
+
+            if(temp==null && ghead.data==data){
                 ghead=current.next;
                 current.next=null;
                 current=null;
             }
+            //else if current is null that is full list is iterated but key hasnt been found then 
             else if(current==null){
                 System.out.println("the given key is not present in the list");
             }
+            // else del the key 
             else{
             temp.next=current.next;
             current.next=null;
