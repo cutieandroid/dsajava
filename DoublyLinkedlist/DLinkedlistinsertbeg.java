@@ -47,6 +47,7 @@ public class DLinkedlistinsertbeg {
         // if length is 0 that is list is empty make the new node as head of the list
         if (length == 0) {
             ghead = newnode;
+            gend =newnode;
             length++;
             return;
 
