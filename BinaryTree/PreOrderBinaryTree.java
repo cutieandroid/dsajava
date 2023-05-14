@@ -68,10 +68,14 @@ package BinaryTree;
 
     public void PreOrder(TreeNode node){
 
+        //in preorder traversal we first visit the root node
+        //then explore the left subtree
+        //then explore the right subtree
+
         if(node==null){ //terminating condition
             return;
         }
-        System.out.print(node.data+" ");
+        System.out.print(node.data+" "); 
         PreOrder(node.left);
         PreOrder(node.right);
 
