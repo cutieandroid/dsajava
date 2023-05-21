@@ -75,9 +75,10 @@ public class LevelOrderBinaryTree {
         }
         // level order traversal traverse all nodes of a level then moves to next level
         // like breadth first traversal
+        //we use queue in this method so implement fifo mechanism, as new childs will keep on adding, but we first have to serve the parent nodes
         Queue<TreeNode> q = new LinkedList<>();
         q.add(node);// add root node to start with
-        while (!q.isEmpty()) { // unless queue is emopty do the following
+        while (!q.isEmpty()) { // unless queue is empty do the following
             TreeNode temp = q.remove(); // remove head of queue
             System.out.print(temp.data + " "); // printit
             if (temp.left != null) {
