@@ -72,6 +72,8 @@ package BinaryTree;
     //if left value is more then the parent we will rewrite value of result  as lefts value
     //on moving forward if we encounter rights value to be more then the left then we wil rewrite and pass on the max value to the parent call
 
+
+    //this is similar to preorder traversal where we first visit root node print it , then left node and lastly right node
     public int findmax(TreeNode node){
 
       if(node==null){
