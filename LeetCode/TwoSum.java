@@ -37,6 +37,10 @@ import java.util.Map;
 
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
+        //for optimization we need to use hash map, whenever the loop visits new element of array 
+        //it will find out the complement and check if comp is there in the map or not
+        //if it is not it will add current element in map
+        //so when it will encounter one of the element of solution pair it will get the one inserted in map
         Map<Integer,Integer>hm = new  HashMap<Integer,Integer>();
         for(int i=0;i<nums.length;i++){
             int complement=target-nums[i];
